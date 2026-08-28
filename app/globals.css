@@ -36,6 +36,15 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+#hero-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
 /* Responsive grids */
 @media (max-width: 768px) {
   .service-grid {

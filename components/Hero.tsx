@@ -16,22 +16,20 @@ export default function Hero() {
   };
 
   return (
-    <section
+    <section id="hero-section"
       style={{
-        minHeight: "100vh",
+        height: "100vh",
         backgroundImage: "url('/foto_inicio.png')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center 30%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "flex-start",
+        alignItems: "center",
         justifyContent: "center",
-        paddingTop: "0px",
-        marginTop: "-72px",
         position: "relative",
       }}
     >
-      <div style={{ padding: "0 5%" }}>
+      <div style={{ padding: "0 5%", textAlign: "center", width: "100%" }}>
         <h1
           style={{
             fontFamily: "'Baloo 2', cursive",
@@ -39,12 +37,12 @@ export default function Hero() {
             fontWeight: 800,
             color: "#efd57a",
             lineHeight: 1.2,
-            maxWidth: "600px",
+            maxWidth: "100%",
             marginBottom: "40px",
             textShadow: "2px 2px 8px rgba(0,0,0,0.3)",
           }}
         >
-          El comodín de los padres que llegan a todo
+          El comodín de los padres <br /> que llegan a todo
         </h1>
 
         <a
