@@ -1,6 +1,20 @@
 "use client";
 
+import React from "react";
+
 export default function Hero() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    const servicios = document.getElementById("servicios");
+
+    if (servicios) {
+      servicios.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       style={{
@@ -16,7 +30,6 @@ export default function Hero() {
         position: "relative",
       }}
     >
-      {/* Slogan */}
       <div style={{ padding: "0 5%" }}>
         <h1
           style={{
@@ -33,13 +46,9 @@ export default function Hero() {
           El comodín de los padres que llegan a todo
         </h1>
 
-        {/* Botón servicios */}
-        
+        <a
           href="#servicios"
-          onClick={(e) => {
-            e.preventDefault();
-            document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" });
-          }}
+          onClick={handleScroll}
           style={{
             backgroundColor: "#96cd66",
             color: "#000",
@@ -53,7 +62,7 @@ export default function Hero() {
             boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
           }}
         >
-          servicios
+          Servicios
         </a>
       </div>
     </section>
