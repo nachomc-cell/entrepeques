@@ -26,7 +26,8 @@ export default function Hero() {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: "center",
-        paddingTop: "72px",
+        paddingTop: "0px",
+        marginTop: "-72px",
         position: "relative",
       }}
     >
