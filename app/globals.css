@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #fdfbf9;
+  --color-navbar: #fff3e0;
+  --color-green: #96cd66;
+  --color-yellow: #efd57a;
+  --color-blue: #6a8cb8;
+  --color-text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdfbf9;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.font-title {
+  font-family: 'Baloo 2', cursive;
+}
+
+.font-body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Responsive grids */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .sobre-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .values-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
