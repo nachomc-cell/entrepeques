@@ -71,22 +71,22 @@ export default function SobreNosotros() {
             </p>
           </div>
 
-          <div
+           <div
             style={{
-              backgroundColor: "#6a8cb8",
               borderRadius: "24px",
-              height: "300px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#fff",
-              fontFamily: "'Quicksand', sans-serif",
-              fontWeight: 600,
-              fontSize: "1rem",
-              opacity: 0.75,
+              overflow: "hidden",
+              aspectRatio: "16/9",
             }}
           >
-            📷 Foto del equipo próximamente
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/26Qx2EJ2R2o"
+              title="Entre Peques"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
 
