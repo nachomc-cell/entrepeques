@@ -11,7 +11,7 @@ export default function Servicios() {
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <h2
           style={{
-            fontFamily: "'Baloo 2', cursive",
+            fontFamily: "'MoreSugar', cursive",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 800,
             textAlign: "center",
@@ -36,7 +36,7 @@ export default function Servicios() {
           <div>
             <h3
               style={{
-                fontFamily: "'Baloo 2', cursive",
+                fontFamily: "'MoreSugar', cursive",
                 fontSize: "1.8rem",
                 fontWeight: 700,
                 marginBottom: "16px",
@@ -47,16 +47,16 @@ export default function Servicios() {
             </h3>
             <p
               style={{
-                fontFamily: "'Quicksand', sans-serif",
-                fontWeight: 500,
-                fontSize: "1rem",
-                lineHeight: 1.8,
-                color: "#222",
-              }}
+              fontFamily: "'Quicksand', sans-serif",
+              fontWeight: 500,
+              fontSize: "1rem",
+              lineHeight: 1.8,
+              color: "#222",
+              textAlign: "justify",
+ 
+            }}
             >
-              Los padres también necesitan tiempo para ellos. Por eso ofrecemos un servicio
-              de cuidado de niños profesional y cercano que permite a los padres salir a
-              vivir una noche tranquilos, sabiendo que sus hijos están en buenas manos.
+              Los padres también necesitan tiempo para ellos, por eso ofrecemos este servicio para permitir a los padres salir a cenar una noche.
             </p>
           </div>
           <div
@@ -92,7 +92,7 @@ export default function Servicios() {
           <div style={{ gridColumn: "1 / -1" }}>
             <h3
               style={{
-                fontFamily: "'Baloo 2', cursive",
+                fontFamily: "'MoreSugar', cursive",
                 fontSize: "1.8rem",
                 fontWeight: 700,
                 marginBottom: "16px",
@@ -109,74 +109,74 @@ export default function Servicios() {
                 fontSize: "1rem",
                 lineHeight: 1.8,
                 color: "#222",
-                textAlign: "center",
+                textAlign: "justify",
+   
                 maxWidth: "700px",
                 margin: "0 auto 36px",
               }}
             >
-              Garantizamos el éxito que vas a tener en tu cumpleaños o el de las familias que
-              nos recomiendan. Ofrecemos un servicio de acompañantes en tu fiesta para las familias.
-              Nuestros presupuestos son completamente personalizados a las necesidades de cada familia.
+              Conocemos el estrés que puede ser para las familias organizar un cumpleaños correctamente. Por ello, ofrecemos encargarnos de esa carga para las familias. Nuestro servicio de cumpleaños ofrece los siguientes packs orientativos como referencia. El presupuesto sigue siendo completamente personalizado a las necesidades del cliente .
             </p>
           </div>
 
           {/* Pack cards */}
-          {[
-            {
-              label: "Pack Básico",
-              items: ["2 animadoras", "Juegos y dinámicas", "Duración: 2h", "Hasta 15 niños"],
-            },
-            {
-              label: "Pack Mágico",
-              items: ["3 animadoras", "Juegos y manualidades", "Duración: 3h", "Hasta 25 niños"],
-            },
-            {
-              label: "Pack Máximo",
-              items: ["4 animadoras", "Programa personalizado", "Duración: 4h", "Sin límite de niños"],
-            },
-          ].map((pack, i) => (
-            <div
-              key={pack.label}
-              style={{
-                backgroundColor: "#6a8cb8",
-                borderRadius: "20px",
-                padding: "28px 24px",
-                color: "#fff",
-                flex: "1",
-                minWidth: "200px",
-                boxShadow: "0 4px 20px rgba(106,140,184,0.25)",
-                gridColumn: i === 2 ? "2 / 3" : undefined,
-              }}
-            >
-              <h4
+          <div style={{ gridColumn: "1 / -1", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
+            {[
+              {
+                label: "Pack básico",
+                color: "#efd57a",
+                items: ["Monitores", "Juegos", "Dinámicas infantiles", "Actividades adaptadas a la edad"],
+              },
+              {
+                label: "Pack completo",
+                color: "#efd57a",
+                items: ["Organización integral del cumpleaños", "Decoración básica", "Coordinación del evento", "Actividades", "Monitores", "Gestión completa"],
+              },
+              {
+                label: "Pack temático",
+                color: "#efd57a",
+                items: ["Decoración temática", "Ambientación", "Monitores de animación", "Actividades personalizadas"],
+              },
+            ].map((pack) => (
+              <div
+                key={pack.label}
                 style={{
-                  fontFamily: "'Baloo 2', cursive",
-                  fontSize: "1.3rem",
-                  fontWeight: 700,
-                  marginBottom: "16px",
-                  color: "#fff",
+                  backgroundColor: "#6a8cb8",
+                  borderRadius: "20px",
+                  padding: "28px 24px",
+                  boxShadow: "0 4px 20px rgba(106,140,184,0.25)",
                 }}
               >
-                {pack.label}
-              </h4>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {pack.items.map((item) => (
-                  <li
-                    key={item}
-                    style={{
-                      fontFamily: "'Quicksand', sans-serif",
-                      fontWeight: 500,
-                      fontSize: "0.95rem",
-                      padding: "4px 0",
-                      borderBottom: "1px solid rgba(255,255,255,0.2)",
-                    }}
-                  >
-                    ✓ {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                <h4
+                  style={{
+                    fontFamily: "'MoreSugar', cursive",
+                    fontSize: "1.3rem",
+                    fontWeight: 400,
+                    marginBottom: "16px",
+                    color: pack.color,
+                  }}
+                >
+                  {pack.label}
+                </h4>
+                <ul style={{ listStyle: "disc", paddingLeft: "20px", margin: 0 }}>
+                  {pack.items.map((item) => (
+                    <li
+                      key={item}
+                      style={{
+                        fontFamily: "'Quicksand', sans-serif",
+                        fontWeight: 500,
+                        fontSize: "0.95rem",
+                        color: "#fff",
+                        padding: "3px 0",
+                      }}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
           {/* CTA presupuesto */}
           <div style={{ gridColumn: "1 / -1", textAlign: "center", marginTop: "8px" }}>
@@ -212,26 +212,44 @@ export default function Servicios() {
         </div>
 
         {/* CLASES PARTICULARES */}
+                {/* CLASES PARTICULARES */}
         <div
           style={{
-            backgroundColor: "#efd57a",
-            borderRadius: "24px",
-            padding: "48px 40px",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            gap: "40px",
-            alignItems: "center",
+            gap: "48px",
+            alignItems: "start",
+            marginTop: "20px",
           }}
           className="service-grid"
         >
+          {/* Foto izquierda */}
+          <div
+            style={{
+              backgroundColor: "#efd57a",
+              borderRadius: "16px",
+              minHeight: "380px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "#555",
+              fontFamily: "'Quicksand', sans-serif",
+              fontWeight: 600,
+              fontSize: "1rem",
+            }}
+          >
+            📷 Imagen próximamente
+          </div>
+
+          {/* Texto derecha */}
           <div>
             <h3
               style={{
-                fontFamily: "'Baloo 2', cursive",
+                fontFamily: "'MoreSugar', cursive",
                 fontSize: "1.8rem",
-                fontWeight: 700,
-                marginBottom: "16px",
-                color: "#000",
+                fontWeight: 400,
+                marginBottom: "20px",
+                color: "#efd57a",
               }}
             >
               Clases particulares
@@ -243,40 +261,25 @@ export default function Servicios() {
                 fontSize: "1rem",
                 lineHeight: 1.8,
                 color: "#222",
-                marginBottom: "16px",
+                textAlign: "justify",
+                marginBottom: "20px",
               }}
             >
-              Al tener especializadas del área con experiencia en las áreas que ofrecemos,
-              podemos dar clases particulares en cada asignatura y provincia con mayor probabilidad.
+              Al tener estudiantes del cole con experiencia en las asignaturas, esto permite conocer las técnicas de cada asignatura y profesor con mayor profundidad.
             </p>
-            <p style={{ fontFamily: "'Quicksand', sans-serif", fontWeight: 600, fontSize: "0.95rem", color: "#333" }}>
-              Las asignaturas incluyen:
+            <p style={{ fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "1rem", color: "#222", marginBottom: "8px" }}>
+              Las asignaturas incluidas son:
             </p>
-            <ul style={{ marginTop: "8px", paddingLeft: "20px", fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "0.95rem", color: "#222", lineHeight: 2 }}>
-              <li>Matemáticas</li>
-              <li>Lengua y Literatura</li>
-              <li>Lengua Castellana</li>
-              <li>English (con docentes con certificados B2 y C1)</li>
-            </ul>
-            <p style={{ marginTop: "12px", fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "0.9rem", color: "#333" }}>
-              Contamos con maestras con título en Educación que dominan el lenguaje pictórico y plástico.
+            <p style={{ fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "1rem", color: "#222", lineHeight: 2 }}>
+              -Maths<br />
+              -Social/natural science<br />
+              -Lengua castellana<br />
+              -English. Con alumnos con certificados B2 y C1.<br />
+              -y muchas más...
             </p>
-          </div>
-          <div
-            style={{
-              backgroundColor: "rgba(255,255,255,0.4)",
-              borderRadius: "16px",
-              height: "220px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#555",
-              fontFamily: "'Quicksand', sans-serif",
-              fontWeight: 600,
-              fontSize: "1rem",
-            }}
-          >
-            📷 Imagen próximamente
+            <p style={{ marginTop: "20px", fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "1rem", color: "#222", textAlign: "justify" }}>
+              Contamos con monitores con titulo de conservatorio que impartiran refuerzo de lenguaje musical y piano.
+            </p>
           </div>
         </div>
       </div>

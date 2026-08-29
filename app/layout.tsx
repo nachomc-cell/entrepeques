@@ -3,7 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Entre Peques",
-  description: "Babysitting, clases particulares y organización de cumpleaños para los más pequeños",
+  description: "Ofrecemos servicios de cuidado infantil y actividades para niños, brindando tranquilidad a los padres mientras sus hijos se divierten.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

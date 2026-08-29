@@ -32,14 +32,14 @@ export default function Hero() {
       <div style={{ padding: "0 5%", textAlign: "center", width: "100%" }}>
         <h1
           style={{
-            fontFamily: "'Baloo 2', cursive",
+            fontFamily: "'MoreSugar', cursive",
             fontSize: "clamp(2.2rem, 6vw, 4.5rem)",
             fontWeight: 800,
             color: "#efd57a",
             lineHeight: 1.2,
             maxWidth: "100%",
             marginBottom: "40px",
-            textShadow: "2px 2px 8px rgba(0,0,0,0.3)",
+            textShadow: "3px 3px 0px #c9a800",
           }}
         >
           El comodín de los padres <br /> que llegan a todo
@@ -51,14 +51,15 @@ export default function Hero() {
           style={{
             backgroundColor: "#96cd66",
             color: "#000",
-            fontFamily: "'Quicksand', sans-serif",
-            fontWeight: 700,
-            fontSize: "1.1rem",
-            padding: "14px 40px",
+            fontFamily: "'MoreSugar', cursive",
+            fontWeight: 400,
+            fontSize: "1.4rem",
+            padding: "18px 56px",
             borderRadius: "50px",
             textDecoration: "none",
             display: "inline-block",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
+            boxShadow: "0 6px 0px #5a9e2f, 0 8px 20px rgba(0,0,0,0.25)",
+            letterSpacing: "0.5px",
           }}
         >
           Servicios

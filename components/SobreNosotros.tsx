@@ -42,9 +42,7 @@ export default function SobreNosotros() {
                 marginBottom: "20px",
               }}
             >
-              Somos Elena y David. Nos conocimos en el A.I.V. hace más de 5 años y desde
-              el primer momento compartimos la misma pasión: trabajar con niños y crear
-              experiencias únicas para las familias.
+              Somos Nacho y Carla, dos alumnos de 4º de la ESO. Y con ayuda de más alumnos del cole formamos Entre Peques.
             </p>
             <p
               style={{
@@ -56,9 +54,7 @@ export default function SobreNosotros() {
                 marginBottom: "20px",
               }}
             >
-              Elena es maestra especializada en Educación Infantil y Primary con certificado
-              B2 en inglés. David es educador social y lleva años coordinando actividades
-              de tiempo libre para niños de todas las edades.
+              Entre Peques nace de una idea de los entrepreneurs del cole para hacer más fácil y divertida la aventura de ser padres.
             </p>
             <p
               style={{
@@ -69,10 +65,9 @@ export default function SobreNosotros() {
                 color: "#222",
               }}
             >
-              Juntos fundamos <strong>Entre Peques</strong> con la convicción de que cada
+              Fundamos Entre Peques con la convicción de que cada
               niño merece una atención personalizada, llena de cariño y profesionalidad.
-              Estamos certificados en primeros auxilios pediátricos y contamos con todas
-              las habilitaciones necesarias.
+              Contamos con el apoyo y la confianza de Edelweiss School que nos han brindado la oportunidad de lanzar nuestro proyecto.
             </p>
           </div>
 
@@ -95,57 +90,7 @@ export default function SobreNosotros() {
           </div>
         </div>
 
-        {/* Values strip */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "24px",
-            marginTop: "60px",
-          }}
-          className="values-grid"
-        >
-          {[
-            { icon: "💚", title: "Cariño", text: "Cada niño recibe atención personalizada y afectuosa." },
-            { icon: "⭐", title: "Profesionalidad", text: "Tituladas, certificadas y con experiencia demostrada." },
-            { icon: "🔒", title: "Confianza", text: "Transparencia total con las familias en todo momento." },
-          ].map((val) => (
-            <div
-              key={val.title}
-              style={{
-                backgroundColor: "#fff",
-                border: "2px solid #f0e8e0",
-                borderRadius: "20px",
-                padding: "28px 20px",
-                textAlign: "center",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div style={{ fontSize: "2.2rem", marginBottom: "10px" }}>{val.icon}</div>
-              <h4
-                style={{
-                  fontFamily: "'Baloo 2', cursive",
-                  fontSize: "1.2rem",
-                  fontWeight: 700,
-                  marginBottom: "8px",
-                }}
-              >
-                {val.title}
-              </h4>
-              <p
-                style={{
-                  fontFamily: "'Quicksand', sans-serif",
-                  fontWeight: 500,
-                  fontSize: "0.92rem",
-                  color: "#444",
-                  lineHeight: 1.6,
-                }}
-              >
-                {val.text}
-              </p>
-            </div>
-          ))}
-        </div>
+ 
       </div>
     </section>
   );
