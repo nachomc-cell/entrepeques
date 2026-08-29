@@ -38,7 +38,7 @@ export default function Hero() {
             color: "#efd57a",
             lineHeight: 1.2,
             maxWidth: "100%",
-            marginBottom: "24px",
+            marginBottom: "60px",
             textShadow: "3px 3px 0px #c9a800",
           }}
         >

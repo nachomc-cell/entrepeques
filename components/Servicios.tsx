@@ -16,7 +16,7 @@ export default function Servicios() {
             fontWeight: 800,
             textAlign: "center",
             marginBottom: "60px",
-            color: "#000",
+            color: "#6a8cb8",
           }}
         >
           Servicios

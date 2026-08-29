@@ -108,4 +108,12 @@ body {
   .packs-grid {
     grid-template-columns: 1fr !important;
   }
+
+    .packs-grid > div {
+    padding: 16px 18px !important;
+  }
+
+  .packs-grid > div ul li {
+    padding: 2px 0 !important;
+  }
 }

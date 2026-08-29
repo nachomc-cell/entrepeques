@@ -11,12 +11,12 @@ export default function SobreNosotros() {
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <h2
           style={{
-            fontFamily: "'Baloo 2', cursive",
+            fontFamily: "'MoreSugar', cursive",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 800,
             textAlign: "center",
             marginBottom: "50px",
-            color: "#000",
+            color: "#6a8cb8",
           }}
         >
           Sobre nosotros
@@ -67,7 +67,7 @@ export default function SobreNosotros() {
             >
               Fundamos Entre Peques con la convicción de que cada
               niño merece una atención personalizada, llena de cariño y profesionalidad.
-              Contamos con el apoyo y la confianza de Edelweiss School que nos han brindado la oportunidad de lanzar nuestro proyecto.
+              Contamos con el apoyo y la confianza de Edelweiss School, que nos han brindado la oportunidad de lanzar nuestro proyecto.
             </p>
           </div>
 
