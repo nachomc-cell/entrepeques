@@ -16,7 +16,7 @@ export default function Footer() {
           color: "#666",
         }}
       >
-        © {new Date().getFullYear()} Entre Peques · Todos los derechos reservados
+        © {new Date().getFullYear()} Entre Peques · Todos los derechos reservados · <a href="https://interno.entre-peques.com" style={{ color: "#6a8cb8", textDecoration: "none" }}>Acceso interno</a>
       </p>
     </footer>
   );
