@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 export default function Contacto() {
   const [servicio, setServicio] = useState("");
@@ -8,7 +9,14 @@ export default function Contacto() {
   const [fecha, setFecha] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleWhatsApp = () => {
+  const handleWhatsApp = async () => {
+    await supabase.from("contactos").insert({
+      nombre,
+      servicio,
+      pack: pack || null,
+      fecha_evento: fecha || null,
+      mensaje: mensaje || null,
+    });
     const texto = `Hola Entre Peques! Me llamo ${nombre} y me interesa el servicio de *${servicio}*.${pack ? `\nPack de referencia: *${pack}*.` : ""}${fecha ? `\nFecha del evento: *${fecha}*.` : ""}\n${mensaje ? `\n${mensaje}` : ""}`;
     const url = `https://wa.me/34611577230?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blank");
