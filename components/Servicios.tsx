@@ -218,19 +218,12 @@ export default function Servicios() {
           {/* Foto izquierda */}
           <div
             style={{
-              backgroundColor: "#efd57a",
               borderRadius: "16px",
+              overflow: "hidden",
               minHeight: "380px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#555",
-              fontFamily: "'Quicksand', sans-serif",
-              fontWeight: 600,
-              fontSize: "1rem",
             }}
           >
-            📷 Imagen próximamente
+            <img src="/clases_particulares.png" alt="Clases particulares" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%" }} />
           </div>
 
           {/* Texto derecha */}
