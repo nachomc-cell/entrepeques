@@ -42,7 +42,7 @@ export default function SobreNosotros() {
                 marginBottom: "20px",
               }}
             >
-              Somos Nacho y Carla, dos alumnos de 4º de la ESO. Y con ayuda de más alumnos del cole formamos Entre Peques.
+              Somos Nacho y Carla, dos alumnos de 4º de la ESO, y con ayuda de más alumnos del cole formamos Entre Peques.
             </p>
             <p
               style={{
