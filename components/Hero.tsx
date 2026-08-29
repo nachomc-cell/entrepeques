@@ -29,16 +29,16 @@ export default function Hero() {
         position: "relative",
       }}
     >
-      <div style={{ padding: "0 5%", textAlign: "center", width: "100%" }}>
+      <div style={{ padding: "0 5%", textAlign: "center", width: "100%" }} className="hero-content">
         <h1
           style={{
             fontFamily: "'MoreSugar', cursive",
-            fontSize: "clamp(2.2rem, 6vw, 4.5rem)",
+            fontSize: "clamp(1.6rem, 6vw, 4.5rem)",
             fontWeight: 800,
             color: "#efd57a",
             lineHeight: 1.2,
             maxWidth: "100%",
-            marginBottom: "40px",
+            marginBottom: "24px",
             textShadow: "3px 3px 0px #c9a800",
           }}
         >
@@ -62,7 +62,7 @@ export default function Hero() {
             letterSpacing: "0.5px",
           }}
         >
-          Servicios
+          Ver servicios
         </a>
       </div>
     </section>

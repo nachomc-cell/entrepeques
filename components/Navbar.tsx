@@ -49,10 +49,11 @@ export default function Navbar() {
           alignItems: "center",
           justifyContent: "space-between",
           height: "72px",
+          position: "relative",
         }}
       >
         {/* Logo */}
-        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
           <Image
             src="/logo.png"
             alt="Entre Peques"
@@ -60,6 +61,9 @@ export default function Navbar() {
             height={60}
             style={{ objectFit: "contain", borderRadius: "12px" }}
           />
+          <span className="mobile-brand" style={{ fontFamily: "'MoreSugar', cursive", fontSize: "1.8rem", color: "#6a8cb8", display: "none", position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
+            Entre Peques
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -169,6 +173,9 @@ export default function Navbar() {
           }
           .hamburger {
             display: flex !important;
+          }
+          .mobile-brand {
+            display: block !important;
           }
         }
       `}</style>

@@ -42,9 +42,7 @@ export default function Contacto() {
           <p style={{ fontFamily: "'Quicksand', sans-serif", fontWeight: 500, fontSize: "1rem", color: "#444", marginBottom: "6px" }}>
             Encuéntranos en nuestras redes sociales:
           </p>
-          <p style={{ fontFamily: "'MoreSugar', cursive", fontSize: "1.3rem", color: "#6a8cb8", marginBottom: "12px" }}>
-            @entrepeques.vlc
-          </p>
+          <a href="https://www.instagram.com/entrepeques.vlc" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'MoreSugar', cursive", fontSize: "1.3rem", color: "#6a8cb8", marginBottom: "12px", display: "block", textDecoration: "none" }}>@entrepeques.vlc</a>
           <p style={{ fontFamily: "'Quicksand', sans-serif", fontWeight: 600, fontSize: "1rem", color: "#444" }}>
             ¡Contáctanos por WhatsApp! 📱
           </p>

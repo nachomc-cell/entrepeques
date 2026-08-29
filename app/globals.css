@@ -64,3 +64,48 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+
+@media (max-width: 768px) {
+  #hero-section {
+    background-position: 40% 65% !important;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 48px !important;
+    margin-top: -40px !important;
+  }
+
+  .hero-content a {
+    font-size: 1rem !important;
+    padding: 18px 50px !important;
+    margin-top: 100px !important;
+    display: inline-block !important;
+  }
+
+    .service-grid p,
+  .service-grid li {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .service-grid h3 {
+    font-size: 1.6rem !important;
+  }
+
+  .service-grid h4 {
+    font-size: 1.2rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  section {
+    overflow-x: hidden !important;
+  }
+
+  .packs-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

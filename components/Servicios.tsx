@@ -120,7 +120,7 @@ export default function Servicios() {
           </div>
 
           {/* Pack cards */}
-          <div style={{ gridColumn: "1 / -1", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
+          <div className="packs-grid" style={{ gridColumn: "1 / -1", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
             {[
               {
                 label: "Pack básico",
