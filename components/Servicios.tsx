@@ -61,20 +61,12 @@ export default function Servicios() {
           </div>
           <div
             style={{
-              backgroundColor: "#6a8cb8",
               borderRadius: "20px",
+              overflow: "hidden",
               height: "220px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#fff",
-              fontFamily: "'Quicksand', sans-serif",
-              fontWeight: 600,
-              fontSize: "1rem",
-              opacity: 0.7,
             }}
           >
-            📷 Imagen próximamente
+                        <img src="/babysitting.png" alt="Babysitting" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 73%" }} />
           </div>
         </div>
 
